@@ -50,6 +50,6 @@ jobs:
       - name: Telegram Notify
         uses: appleboy/telegram-action@master
         with:
-          botToken: ${{ secrets.BOT_TOKEN }}
-          chatId: ${{ secrets.CHAT_ID }}
+          token: ${{ secrets.BOT_TOKEN }}
+          to: ${{ secrets.CHAT_ID }}
           message: ha
