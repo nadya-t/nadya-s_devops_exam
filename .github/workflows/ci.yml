@@ -52,5 +52,5 @@ jobs:
         with:
           to: ${{ secrets.CHAT_ID }}
           token: ${{ secrets.BOT_TOKEN }}
-          document: app
-          
+          message: ${{ github.event_name }} in ${{ github.repository}}
+          document: app        
