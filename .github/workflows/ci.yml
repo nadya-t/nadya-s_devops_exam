@@ -46,4 +46,14 @@ jobs:
           name: my-artifact
           path: HelloWorld
           retention-days: 5
+        
+      - name: Telegram Action
+        # You may pin to the exact commit or the version.
+        # uses: xinthink/action-telegram@20b3085f4d1aa43c08c29411536b8b48658fc169
+        uses: xinthink/action-telegram@v1.1
+        with:
+          # The Telegram Bot token
+          botToken: 5452682250:AAGf6eybqwThFzUb_DxILp64ghXgihqR2vE
+          # The target to which the message will be sent, can be a Telegram Channel or Group
+          chatId: -1001575097043\
           
