@@ -47,13 +47,10 @@ jobs:
           path: HelloWorld
           retention-days: 5
         
-      - name: Telegram Action
-        # You may pin to the exact commit or the version.
-        # uses: xinthink/action-telegram@20b3085f4d1aa43c08c29411536b8b48658fc169
-        uses: xinthink/action-telegram@v1.1
+      - name: Telegram Notify
+        uses: appleboy/telegram-action@0.0.3
         with:
-          # The Telegram Bot token
-          botToken: BOT_TOKEN
-          # The target to which the message will be sent, can be a Telegram Channel or Group
-          chatId: CHAT_ID
+          to: ${{ secrets.CHAT_ID }}
+          token: ${{ secrets.BOT_TOKEN }}
+          document: app
           
