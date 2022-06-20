@@ -38,11 +38,12 @@ jobs:
       - name: Build
         run: |
           python3 app.py -o app
-    
-      - name: 'Upload Artifact'
-        uses: actions/upload-artifact@v3
+          
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.0
         with:
+          # Artifact name
           name: my-artifact
           path: app
-          retention-days: 5
+          retention-days: 3
           
