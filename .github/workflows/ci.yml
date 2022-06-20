@@ -44,6 +44,6 @@ jobs:
         with:
           # Artifact name
           name: my-artifact
-          path: /
+          path: APP
           retention-days: 3
           
