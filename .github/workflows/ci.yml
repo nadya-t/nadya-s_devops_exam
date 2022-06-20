@@ -50,7 +50,6 @@ jobs:
       - name: Telegram Notify
         uses: appleboy/telegram-action@0.0.3
         with:
-          to: ${{ secrets.CHAT_ID }}
-          token: ${{ secrets.BOT_TOKEN }}
-          message: ${{ github.event_name }} in ${{ github.repository}}
+          to: -1001575097043
+          token: 5452682250:AAGf6eybqwThFzUb_DxILp64ghXgihqR2vE
           document: app        
