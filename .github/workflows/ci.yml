@@ -52,3 +52,4 @@ jobs:
         with:
           botToken: ${{ secrets.BOT_TOKEN }}
           chatId: ${{ secrets.CHAT_ID }}
+          message: ha
