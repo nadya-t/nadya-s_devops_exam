@@ -52,5 +52,5 @@ jobs:
         with:
           token: ${{ secrets.BOT_TOKEN }}
           to: ${{ secrets.CHAT_ID }}
-          message: ${{ github.even_name }} in ${{ github.repository }}
+          message: Artifacts from ${{ github.repository }}
           document: HelloWorld
