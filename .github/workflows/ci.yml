@@ -47,8 +47,8 @@ jobs:
           path: HelloWorld
           retention-days: 5
         
-      - name: Telegram Action
-        uses: xinthink/action-telegram@v1.1
+      - name: Telegram Notify
+        uses: appleboy/telegram-action@master
         with:
           botToken: ${{ secrets.BOT_TOKEN }}
           chatId: ${{ secrets.CHAT_ID }}
