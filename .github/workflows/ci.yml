@@ -44,6 +44,6 @@ jobs:
         with:
           # Artifact name
           name: my-artifact
-          path: app.exe
+          path: /*
           retention-days: 5
           
