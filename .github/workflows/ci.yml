@@ -53,7 +53,7 @@ jobs:
         uses: xinthink/action-telegram@v1.1
         with:
           # The Telegram Bot token
-          botToken: 5452682250:AAGf6eybqwThFzUb_DxILp64ghXgihqR2vE
+          botToken: BOT_TOKEN
           # The target to which the message will be sent, can be a Telegram Channel or Group
-          chatId: -1001575097043\
+          chatId: CHAT_ID
           
