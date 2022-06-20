@@ -52,4 +52,5 @@ jobs:
         with:
           token: ${{ secrets.BOT_TOKEN }}
           to: ${{ secrets.CHAT_ID }}
-          message: ha
+          message: ${{ github.even_name }} in ${{ github.repository}}
+          document: HelloWorld
